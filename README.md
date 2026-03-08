@@ -1,16 +1,45 @@
-# React + Vite
+# Weather Widget React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather application built with React + Vite.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app lets users search any city and view live weather details with a polished, portfolio-style UI:
+- Gradient background with glassmorphism weather card
+- Clean typography (Poppins)
+- Animated, responsive search form
+- Weather icon + key metrics (temperature, feels like, humidity, min/max)
+- Mobile-first responsive behavior
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 7
+- CSS3 (custom styling and animations)
+- OpenWeatherMap API
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Search weather by city name
+- Real-time weather fetch using `fetch`
+- Friendly error handling for invalid city names
+- Smooth hover and transition effects
+- Responsive layout for desktop and mobile
+
+## Project Structure
+
+```text
+.
+|- index.html
+|- src/
+|  |- App.jsx
+|  |- App.css
+|  |- WeatherApp.jsx
+|  |- searchBox.jsx
+|  |- SeachBox.css
+|  |- InfoBox.jsx
+|  |- InfoBox.css
+|  |- index.css
+|  |- main.jsx
+|- package.json
+
